@@ -7,11 +7,11 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #000000;
+    background-color: rgb(124, 152, 154);
 }
 
 header {
-    background-color: rgb(16, 10, 1);
+    background-color: rgb(255, 255, 255);
     height: 60px;
     display: flex;
     justify-content: center;
@@ -28,7 +28,7 @@ header nav ul li {
 }
 
 header nav a {
-    color: white;
+    color: black;
     text-decoration: none;
     transition: color 1s ease-in-out;
     padding: 5px;
@@ -36,14 +36,24 @@ header nav a {
 
 .orange.texte:hover {
     text-decoration: underline;
-    color: orange !important;
+    color: rgb(157, 212, 230) !important;
 }
 
 .orangebackground:hover {
-    background-color: orange !important;
+    background-color: rgb(147, 208, 228) !important;
 }
 
 #part1 {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: stretch;
+}
+
+#part2 {
     margin-top: 100px;
     display: flex;
     flex-direction: row;
@@ -55,45 +65,83 @@ header nav a {
 }
 
 .container {
-
-    width: 800px;
-    height: 300px;
+    margin-bottom: 100px;
+    width: 1400px;
+    height: 700px;
     position: relative;
 }
 
-.square1 {
+#square1 {
     position: absolute;
-}
-
-.square2 {
-    transition: 2s ease-in-out;
-    background-color: rgb(255, 255, 255);
-    position: absolute;
-    border: 3px solid rgb(109, 53, 0);
-    border-radius: 5px;
-    padding-left: 170px;
-    padding-top: 10px;
-}
-
-.square1.top {
     width: 200px;
     height: 300px;
     top: 0;
     left: 0;
 }
 
-.square2.center {
-
+#square2 {
     width: 800px;
     height: 250px;
     top: 80px;
     left: 40px;
+    transition: 2s ease-in-out;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    border: 3px solid lightblue;
+    border-radius: 5px;
+    padding-left: 170px;
+    padding-top: 10px;
 }
+
+#square3 {
+    width: 600px;
+    height: 200px;
+    position: absolute;
+    top: 300px;
+    left: 650px;
+    background-color: white;
+    border: 3px solid lightblue;
+    transition: 2s ease-in-out;
+}
+
+#square4 {
+    width: 300px;
+    height: 200px;
+    position: absolute;
+    top: 75px;
+    left: 950px;
+    background-color: white;
+    border: 3px solid rgb(239, 246, 248);
+    transition: 2s ease-in-out;
+}
+
+#square5 {
+    width: 200px;
+    height: 350px;
+    position: absolute;
+    top: 400px;
+    left: 400px;
+    background-color: white;
+    border: 3px solid lightblue;
+    transition: 2s ease-in-out;
+}
+
+#square6 {
+    width: 150px;
+    height: 50px;
+    position: absolute;
+    top: 400px;
+    left: 1200px;
+    background-color: white;
+    border: 3px solid lightblue;
+    transition: 2s ease-in-out;
+}
+
 
 #pprofil {
     border-radius: 5px;
     z-index: 2;
-    border: 1px solid black;
+    border: 1px solid lightblue;
     position: absolute;
     top: 0;
     left: 0;
