@@ -5,17 +5,58 @@
 
 }
 
+.loading-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 2;
+    transition: ease-in-out 1s;
+}
+
+.spinner {
+    width: 100px;
+    height: 100px;
+    border: 5px solid #ccc;
+    border-top-color: #333;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
 body {
     font-family: Arial, sans-serif;
-    background-color: rgb(124, 152, 154);
+    background-color: grey;
+    transition: 2s ease-in-out;
 }
 
 header {
+    z-index: 2;
     background-color: rgb(255, 255, 255);
     height: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+
 }
 
 header nav ul {
@@ -23,8 +64,19 @@ header nav ul {
     list-style-type: none;
 }
 
+.gauche {
+    position: relative;
+    left: 100%;
+    cursor: pointer;
+}
+
+.linav {
+    transition: ease-in-out 1s;
+}
+
 header nav ul li {
     padding: 0 20px;
+    align-items: center;
 }
 
 header nav a {
@@ -39,10 +91,11 @@ header nav a {
     color: rgb(157, 212, 230) !important;
 }
 
+/*
 .orangebackground:hover {
     background-color: rgb(147, 208, 228) !important;
 }
-
+*/
 #part1 {
     margin-top: 100px;
     display: flex;
@@ -87,7 +140,7 @@ header nav a {
     transition: 2s ease-in-out;
     background-color: rgb(255, 255, 255);
     position: absolute;
-    border: 3px solid lightblue;
+    border: 3px solid white;
     border-radius: 5px;
     padding-left: 170px;
     padding-top: 10px;
@@ -100,7 +153,7 @@ header nav a {
     top: 300px;
     left: 650px;
     background-color: white;
-    border: 3px solid lightblue;
+    border: 3px solid white;
     transition: 2s ease-in-out;
 }
 
@@ -111,7 +164,7 @@ header nav a {
     top: 75px;
     left: 950px;
     background-color: white;
-    border: 3px solid rgb(239, 246, 248);
+    border: 3px solid white;
     transition: 2s ease-in-out;
 }
 
@@ -122,7 +175,7 @@ header nav a {
     top: 400px;
     left: 400px;
     background-color: white;
-    border: 3px solid lightblue;
+    border: 3px solid white;
     transition: 2s ease-in-out;
 }
 
@@ -133,15 +186,15 @@ header nav a {
     top: 400px;
     left: 1200px;
     background-color: white;
-    border: 3px solid lightblue;
+    border: 3px solid white;
     transition: 2s ease-in-out;
 }
 
 
 #pprofil {
     border-radius: 5px;
-    z-index: 2;
-    border: 1px solid lightblue;
+    z-index: 1;
+    border: 1px solid white;
     position: absolute;
     top: 0;
     left: 0;
