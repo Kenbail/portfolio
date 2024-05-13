@@ -4,7 +4,7 @@ $(document).ready(function () {
         var laclass = $(".orangebackground").attr("class")
         $('.' + laclass).css("background-color", "lightblue")
         $("body").css("background-color", "rgb(210,210,210)")
-    }, 3000);
+    }, 1000);
 
     /*$(".orange.texte").mouseleave(function () {
         var couleur = $(this).css("color");
@@ -13,7 +13,7 @@ $(document).ready(function () {
 
 
     // i pour interval
-    var i = 0
+    var i = 1
     $('.gauche').on("click", function () {
         if (i == 0) {
             var laclass = $(".orangebackground").attr("class")
