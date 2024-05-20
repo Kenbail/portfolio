@@ -2,8 +2,8 @@ $(document).ready(function () {
     setTimeout(() => {
         $(".loading-screen").hide()
         var laclass = $(".orangebackground").attr("class")
-        $('.' + laclass).css("background-color", "lightblue")
-        $("body").css("background-color", "rgb(210,210,210)")
+        $('.' + laclass).css("background-color", "#93DEFF")
+        $("body").css("background-color", "rgb(96, 100, 112)")
     }, 1000);
 
     /*$(".orange.texte").mouseleave(function () {
@@ -17,8 +17,8 @@ $(document).ready(function () {
     $('.gauche').on("click", function () {
         if (i == 0) {
             var laclass = $(".orangebackground").attr("class")
-            $('.' + laclass).css("background-color", "lightblue")
-            $("body").css("background-color", "rgb(210,210,210)")
+            $('.' + laclass).css("background-color", "#93DEFF")
+            $("body").css("background-color", "rgb(96, 100, 112)")
             setTimeout(() => {
                 i = i + 1
             }, 100);

@@ -8,6 +8,8 @@
 </head>
 
 <body>
+
+    <div></div>
     <div class="loading-screen">
         <div class="spinner"></div>
         <div>
@@ -17,25 +19,22 @@
     <header>
         <nav>
             <ul>
-                <li><a class="linav orange texte" href="#">Accueil</a></li>
+                <li><a class="linav orange texte" href='#top'>Accueil</a></li>
                 <li><a class="linav orange texte" href="#">Présentation</a></li>
-                <li><a class="linav orange texte" href="#">Compétence</a></li>
-                <li><a class="linav orange texte" href="#">Projets</a></li>
+                <li><a class="linav orange texte" href="#parcoursanchor">Parcours</a></li>
+                <li><a class="linav orange texte" href="#projetanchor">Projets</a></li>
                 <li class="gauche"><img src="image/icons8-soleil-64.png" height="30px">
                 </li>
             </ul>
         </nav>
     </header>
-    <div id="part1">
+    <div class="part">
         <div class="container">
             <div id="square1" class="top">
                 <img id="pprofil" src="image/lulujoli.jpg">
             </div>
             <div id="square2" class="orangebackground">
                 Étudiant en BTS SIO Option Slam à Efrei Paris, j'aime essayer de me challenger
-            </div>
-            <div id="square3" class="orangebackground">
-                J'ai réaliser projet..
             </div>
             <div id="square4" class="orangebackground">
                 Compétence
@@ -49,24 +48,55 @@
             </div>
         </div>
     </div>
-
-    <div id="part2">
+    <div id="parcoursanchor"></div>
+    <div class="part">
         <div class="container">
             <div class="line"></div>
-            <div id="square6"> efrei </div>
-            <div id="square7"> alternance Stage DSIN </div>
-            <div id="square8"> EBG </div>
-            <div id="square9"> Bac option math NSI </div>
-            <div id="rond1" class="rond"></div>
-            <div id="rond2" class="rond"></div>
-            <div id="rond3" class="rond"></div>
-            <div id="rond4" class="rond"></div>
+            <div id="square6">efrei</div>
+            <div id="square7">alternance Stage DSIN</div>
+            <div id="square8">EBG</div>
+            <div id="square9">Bac option math NSI</div>
+            <div class="rond" id="rond1"></div>
+            <div class="rond" id="rond2"></div>
+            <div class="rond" id="rond3"></div>
+            <div class="rond" id="rond4"></div>
         </div>
     </div>
-    <div id="icones">
-        ©<a target="_blank" href="https://icons8.com/icons/set/sun-and-moon">Soleil</a> icône par <a target="_blank"
-            href="https://icons8.com">Icons8</a>
+    <div id="projetanchor"></div>
+    <div id="part3" class="part">
+        <div class="container" id="square10">Mes Projets:
+            <div id="square11">
+                Ebg : Outils de documentation (Intranet)
+            </div>
+            <div id="square12">
+                Projet Perso: Site non-commerciale Nature&Hotes
+            </div>
+            <div id="square13">
+                Introduction à jquery Memory
+            </div>
+            <div id="square14">
+                alternance: Outils de gestionnaire de projet (Intranet)
+            </div>
+            <div id="square15">
+                alternance: Macro VBA
+            </div>
+        </div>
     </div>
+    <div class="part">
+        <div class="container" id="square16">
+            Vielle informatique
+        </div>
+    </div>
+    <div class="part">
+        <div id="icones">
+            ©<a target="_blank" href="https://icons8.com/icons/set/sun-and-moon">Soleil</a> icône par <a target="_blank"
+                href="https://icons8.com">Icons8</a>
+        </div>
+    </div>
+
+
+
+
 </body>
 <script src="script.js"></script>
 
