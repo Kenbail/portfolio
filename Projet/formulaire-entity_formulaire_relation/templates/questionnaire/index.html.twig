@@ -1,0 +1,36 @@
+{% extends 'base.html.twig' %}
+
+    
+    {% block body %}
+
+        <h1>Questionnaire d'expression du Besoin</h1>
+
+        <p id="description"><b>Merci de remplir ce questionnaire d’expression du besoin dont l’objectif est de permettre d’étudier la faisabilité de votre demande d’outil ou de service numérique et de la faire arbitrer par le Comité de suivi des projets (CSP) de la DSIN (hebdomadaire).</b></p>
+
+        <p id="remarque">Remarque : la réponse exhaustive à toutes les questions est souhaitable mais non obligatoire. L’objectif de la DSIN est de disposer d’un maximum d'informations pour analyser au mieux votre besoin et identifier la solution la plus adaptée.</p>
+
+        <p id="duree"><b>Durée estimée : 10/15 minutes</b></p>
+        <ul>
+            <li class="titlelist"><b>Demande</b></li>
+
+            <li>Date envoi : <input type="date"></li>
+            <li>Direction ou service métier : <input type="text"></li>
+            <li>Directeur ou chef de service : <input type="text"></li>
+                
+            <li class="titlelist"><b>Réception</b></li>
+
+            <li>Date réception : <input type="date"></li>
+            <li>Sous-direction ou service DSIN : <input type="text"></li>
+            <li>Directeur ou chef de service : <input type="text"></li> 
+        </ul>
+
+    {% endblock %}
+
+    {% block footer %}
+    
+    <a href="form" class="btn test">Commencer le questionnaire</a>
+    
+    {% endblock %}
+
+    
+

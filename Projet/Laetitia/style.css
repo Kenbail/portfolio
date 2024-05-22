@@ -1,0 +1,348 @@
+body {
+    background-color: rgb(241, 241, 219);
+}
+
+.catch {
+    font-family: "Dancing Script", cursive;
+    font-size: 5em;
+    letter-spacing: 1px;
+    word-spacing: -3px;
+    color: #daf5da;
+    text-shadow: 3px 1px 2px #7AA95C;
+    font-weight: 400;
+    font-variant: small-caps;
+    margin: auto;
+
+}
+
+.catch span {
+    background-color: rgba(202, 218, 205, 0.4);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5 px);
+    padding: 20px;
+    margin: 30px;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+
+
+
+.head {
+    display: block;
+    background-image: url(IMG/piscine2.jpg);
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.doublecol {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: stretch;
+}
+
+.espacement {
+    margin-top: 50px;
+}
+
+.col1 {
+    font-size: 24px;
+    color: #000000;
+    font-weight: normal;
+    text-decoration: none solid rgb(68, 68, 68);
+    font-style: italic;
+    font-variant: normal;
+    text-transform: none;
+
+}
+
+.cube {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: flex-start;
+    margin: 20px;
+}
+
+.affiphoto {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: baseline;
+    align-content: stretch;
+}
+
+.cubextern {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    align-content: flex-start;
+    margin: 20px;
+}
+
+.cubextern2 {
+    display: flex;
+    flex-direction: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-content: flex-start;
+    margin: 20px;
+}
+
+.cubextern2titre {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: baseline;
+    align-content: stretch;
+}
+
+.cubedl {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.titre {
+    font-family: "Arial Black", Gadget, sans-serif;
+    font-size: 30px;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    color: #7AA95C;
+    font-weight: normal;
+    font-style: italic;
+    font-variant: normal;
+    text-transform: none;
+}
+
+
+
+.boutton {
+    transition-duration: 0.4s;
+}
+
+.boutton:hover {
+    /* Green */
+    opacity: 50%;
+    cursor: pointer;
+}
+
+.boutton:click {
+    opacity: 0%;
+}
+
+.titrepetit {
+    font-family: "Arial Black", Gadget, sans-serif;
+    font-size: 20px;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    color: rgb(59, 58, 58);
+    font-weight: normal;
+    text-decoration: underline solid rgb(68, 68, 68);
+    font-style: italic;
+    font-variant: normal;
+    text-transform: none;
+}
+
+.cube div.col1 {
+    width: 85%;
+    border-radius: 10px;
+    margin: 20px;
+    margin-top: 60px;
+    padding: 10px;
+    border: #000000;
+}
+
+.logonav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: stretch;
+}
+
+li {
+    height: 150px;
+}
+
+.logo {
+    width: 200px;
+    height: 100px;
+    padding: 2px;
+}
+
+.container {
+    width: 100%;
+    margin-top: 10px;
+    background-color: rgba(222, 155, 11, 0.249);
+    border-radius: 2%;
+    padding: 10px;
+    margin-left: 0px;
+    margin-right: 0px;
+
+}
+
+.zoomable {
+    width: 200px;
+    /* Taille initiale de l'image */
+    transition: width 0.5s ease;
+    /* Animation de transition fluide */
+    cursor: pointer;
+    /* Curseur indiquant que l'image est cliquable */
+}
+
+.modale {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    padding: 7vh;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+    justify-content: center;
+}
+
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.carousel {
+    border-radius: 2%;
+    width: 100%;
+    object-fit: fill;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 2px;
+}
+
+.col.s12 {
+    color: black !important;
+}
+
+.nav-wrapper img {
+    height: 90% !important;
+    width: 20% !important;
+    border-radius: 5px;
+}
+
+.carousel.carousel-slider {
+    margin: 5px;
+}
+
+nav {
+    background-color: #7AA95C;
+}
+
+@media screen and (max-width: 600px) {
+    .carousel2 {
+        display: none;
+    }
+
+    .cube {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        align-content: flex-start;
+        margin: 20px;
+    }
+
+    .cubextern2titre {
+        display: none;
+    }
+
+    .boutton.tarif {
+        scale: 60%;
+    }
+
+    .cubextern2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        align-content: flex-start;
+        margin: 20px;
+    }
+
+    .col1 {
+        font-size: 1.5em;
+        color: #000000;
+        font-weight: normal;
+        text-decoration: none solid rgb(68, 68, 68);
+        font-style: italic;
+        font-variant: normal;
+        text-transform: none;
+
+    }
+
+
+    .nav-wrapper img {
+        margin-top: 5px;
+    }
+
+    .col.s8 {
+        margin-top: 20px;
+    }
+
+    .logonav {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+
+    .logo {
+        height: 150px;
+        width: auto;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .catch {
+        font-family: "Dancing Script", cursive;
+        font-size: 2em;
+        color: #ffffff;
+        font-weight: 400;
+        font-variant: small-caps;
+
+    }
+}

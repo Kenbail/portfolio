@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}Welcome!{% endblock %}</title>
+        <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text><text y=%221.3em%22 x=%220.2em%22 font-size=%2276%22 fill=%22%23fff%22>sf</text></svg>">
+        {% block stylesheets %}
+        {% endblock %}
+        {% block javascripts %}
+            {% block importmap %}{{ importmap('app') }}{% endblock %}
+        {% endblock %}
+        <h1>Questionnaire d'expression du Besoin</h1>
+    </head>
+    <body>
+    {% block body %} 
+    <div class="container">
+        <form method="post">
+            <h3>1. Donnez un nom au projet</h3>
+            <br>
+            <input type="text" multitude="0"choixm="0" check_oui_non="non" name="question1">
+            <br>
+
+            <h3>2. Quel est votre besoin ?</h3>
+            <br>
+            <input type="checkbox"  multitude="0" choixm="0" check_oui_non="non" class="question2" name="question2">Faire évoluer un service numérique existant(Application, téléservice, site web...)
+            <br>
+            <p ajout="oui" class="question2"></p>
+            <input type="checkbox"  multitude="0" choixm="0" check_oui_non="non" class="question2" name="question2">Remplacer un service numérique exitant
+            <br>
+            <p ajout="oui" class="question2"></p>
+            <input type="checkbox"  multitude="0" choixm="0" check_oui_non="non" class="question2" name="question2">Disposer d'un nouveau service numérique
+            <br>
+            <p ajout="oui" class="question2"></p>
+            <br>
+
+            <h3>3. Dans la liste ci-dessous, merci de sélectionner le/s grand/s domaine/s fonctionnel/s à couvrir par le service numérique?</h3>
+            <br>
+            
+            <input type="checkbox" multitude="0" choixm="1" check_oui_non="non" class="question3" name="question3">Automatisation d’un flux et/ou d’une interface entre applications dans les domaines RH, financier, comptable, administratif, etc.
+            <br>
+            <input type="checkbox" multitude="0" choixm="1" check_oui_non="non" class="question3" name="question3">Dématérialisation d’un processus métier, intégrant ou non la signature électronique, un ou plusieurs circuits de gestion/validation, etc.,
+            <br>
+            <input type="checkbox" multitude="0" choixm="1" check_oui_non="non" class="question3" name="question3">Gestion électronique de documents (bureautiques, multimédias, plans, etc.), gestion documentaire, archivage électronique,
+            <br>
+            <input type="checkbox" multitude="0" choixm="1" check_oui_non="non" class="question3" name="question3">Exploitation, suivi et analyse de données produites et/ou acquises par la/les direction/s
+            <br>
+            <input type="checkbox" multitude="0" choixm="1" check_oui_non="non" class="question3" name="question3">Service lié à la gestion spécifique d’un domaine métier du Département
+            <br>
+            <p ajout="oui" class="question3"></p>
+            <input type="checkbox"  class="question3" name="question3">Autres
+            <br>
+            <p ajout="oui" class="question3"></p>
+            <br>
+
+            <h3>4. Avez-Vous déjà indentifié une solution qui réponde à votre besoin ?</h3>
+            <br>
+            <input type="checkbox" multitude="0" choixm="0" check_oui_non="non" class="question4" name="question4">Oui
+            <br>
+            <p ajout="oui" class="question4"></p>
+            <input type="checkbox" multitude="0" choixm="0" check_oui_non="non" class="question4" name="question4">Non
+            <br>
+            <br>
+
+            <h3>5. Quels sont les objectifs et les gains attendus ?</h3>
+            <br>
+            <input type="checkbox"  multitude="0" choixm="1" check_oui_non="non" class="question5" name="question5">Réduire les tâches chronophages et/ou redondantes
+            <br>
+            <input type="checkbox"  multitude="0" choixm="1" check_oui_non="non" class="question5" name="question5">Améliorer l’organisation du travail et les processus métiers
+            <br>
+            <input type="checkbox"  multitude="0" choixm="1" check_oui_non="non" class="question5" name="question5">Faciliter les échanges et développer la/les collaboration/s internes et externes
+            <br>
+            <input type="checkbox"  multitude="0" choixm="1" check_oui_non="non" class="question5" name="question5">Favoriser l’implication et la motivation des agents au quotidien
+            <br>
+            <input type="checkbox"  multitude="0" choixm="1" check_oui_non="non" class="question5" name="question5">Acquérir et/ou renforcer les compétences des équipes
+            <br>
+            <input type="checkbox"  multitude="0" choixm="1" check_oui_non="non" class="question5" name="question5">Mutualiser un service numérique au sein d’un ou plusieurs services/directions
+            <br>
+            <input type="checkbox"  class="question5" name="question5">Autre
+            <br>
+            <p ajout="oui" class="question5"></p>
+            <br>
+
+            <h3>6. Le service numérique auta-t-il un effet organisationnel en matière d'effectis du service ou de la direction</h3>
+            <div>
+                <input type="checkbox"  multitude="1" choixm="0" check_oui_non="non" class="question6" name="question6">A la hausse
+                <input type="checkbox"  multitude="1" choixm="0" check_oui_non="non" class="question6" name="question6">A la baisse
+                <input type="checkbox"  aucun="1" multitude="1" check_oui_non="non" choixm="0" class="question6" name="question6">Aucun
+            </div>
+            <div>
+                <h4 class="question6" hidden>en cas d'impact, précisez le niveau estimé</h4>
+                <h5 class="question6" hidden><span ajout="oui" check_oui_non="non" class="question6" ></span> < à 1 ETP</h5>
+                <h5 class="question6" hidden><span ajout="oui" check_oui_non="non" class="question6" ></span>Entre 1 et 5 ETP</h5>
+                <h5 class="question6" hidden><span ajout="oui" check_oui_non="non" class="question6" ></span> > 5 ETP</h5>
+            </div>
+
+            <h3>7. Le service numérique permettra-t-il de gagner du temps dans la réalisation d'une ou plusieurs tâches ?</h3>
+            <br>
+            <input type="checkbox" multitude="1" choixm="0" check_oui_non="non" class="question7" name="question7">Oui
+            <br>
+            <input type="checkbox" aucun="1" multitude="1" check_oui_non="non" choixm="0" class="question7" name="question7">Non
+            <br>
+            <h4 class="question7" hidden>Si oui, précisez le temps gagné</h4>
+            <h5 class="question7" hidden><span ajout="oui" check_oui_non="non" class="question7"></span> < 2 jours</h5>
+            <br>
+            <h5 class="question7" hidden><span ajout="oui" check_oui_non="non" class="question7"></span> Entre 2 et 5 jours</h5>
+            <br>
+            <h5 class="question7" hidden><span ajout="oui" check_oui_non="non" class="question7"></span> Entre 5 et 20 jours</h5>
+            <br>
+            <h5 class="question7" hidden><span ajout="oui" check_oui_non="non" class="question7"></span> > 20 jours</h5>
+            <br>
+
+            <h3>11.Tableau ?</h3>
+            <input type="checkbox" multitude="0" choixm="0" check_oui_non="non" tableau="oui" class="question11" name="question11">Oui
+            <p class="question11" hidden></p>
+            <button more type="button" class="question11" hidden>Ajouter une ligne</button>
+            
+            </div>
+        </form>
+    </div>
+     <script src="{{ asset('/jquery-3.7.1.min.js') }}">  
+    {% endblock %}
+    </body>
+</html>

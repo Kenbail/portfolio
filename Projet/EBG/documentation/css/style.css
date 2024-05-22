@@ -1,0 +1,235 @@
+header{
+    padding-left: 300px;
+}
+nav.top-nav {
+    height: 122px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+nav.top-nav a.page-title {
+    line-height: 122px;
+    font-size: 48px;
+}
+main{
+    padding-left: 300px;
+    -webkit-font-smoothing: antialiased;
+}
+ul.sidenav-fixed li.logo {
+    text-align: center;
+    margin-top: 32px;
+    margin-bottom: 80px;
+}
+ul.sidenav-fixed li.dateModification {
+    text-align: center;
+    margin-top: 32px;
+    margin-bottom: 0px;
+}
+@media only screen and (min-width: 993px){
+    .container {
+        width: 90% !important;
+    }
+}
+.sidenav-fixed li.logo>a:hover {
+    background-color: rgba(0,0,0,0);
+}
+
+.rechercheTag {
+    cursor: pointer;
+    margin: 0 5px;
+    padding: 0 5px; 
+    display: inline-block;
+    transition: all 200ms;
+}
+
+.rechercheTag:hover {
+    transition: all 200ms;
+    color: #1565c0;
+    background-color: #ddd;
+    border-radius: 5px;
+}
+b {
+    font-weight: 700;
+}
+
+.btn-noty{
+    margin-right: 5px;
+}
+
+/*MODIFICATION DES COULEURS*/
+ul.sidenav-fixed a.active {
+    background-color: #012039;
+    color: #ffffff;
+}
+nav{
+    background-color: #012039 !important;
+}
+.header {
+    color: #012039 !important;
+    font-weight: 300;
+}
+
+.dropdown-content li>a, .dropdown-content li>span{
+    color: #1565c0 !important;
+}
+
+.btn, .btn-floating, .btn-small{
+    background-color: #1565c0;
+}
+
+.btn:hover, .btn-floating:hover, .btn-small:hover, .btn-flat:hover{
+    background-color: #4DC0F4;
+}
+
+input:not([type]):focus:not([readonly]), input[type=text]:not(.browser-default):focus:not([readonly]), input[type=password]:not(.browser-default):focus:not([readonly]), input[type=email]:not(.browser-default):focus:not([readonly]), input[type=url]:not(.browser-default):focus:not([readonly]), input[type=time]:not(.browser-default):focus:not([readonly]), input[type=date]:not(.browser-default):focus:not([readonly]), input[type=datetime]:not(.browser-default):focus:not([readonly]), input[type=datetime-local]:not(.browser-default):focus:not([readonly]), input[type=tel]:not(.browser-default):focus:not([readonly]), input[type=number]:not(.browser-default):focus:not([readonly]), input[type=search]:not(.browser-default):focus:not([readonly]), textarea.materialize-textarea:focus:not([readonly]){
+    border-bottom: 1px solid #1565c0 !important;
+    -webkit-box-shadow: 0 1px 0 0 #1565c0 !important;
+    box-shadow: 0 1px 0 0 #1565c0 !important;
+}
+
+input:not([type]):focus:not([readonly])+label, input[type=text]:not(.browser-default):focus:not([readonly])+label, input[type=password]:not(.browser-default):focus:not([readonly])+label, input[type=email]:not(.browser-default):focus:not([readonly])+label, input[type=url]:not(.browser-default):focus:not([readonly])+label, input[type=time]:not(.browser-default):focus:not([readonly])+label, input[type=date]:not(.browser-default):focus:not([readonly])+label, input[type=datetime]:not(.browser-default):focus:not([readonly])+label, input[type=datetime-local]:not(.browser-default):focus:not([readonly])+label, input[type=tel]:not(.browser-default):focus:not([readonly])+label, input[type=number]:not(.browser-default):focus:not([readonly])+label, input[type=search]:not(.browser-default):focus:not([readonly])+label, textarea.materialize-textarea:focus:not([readonly])+label {
+    color: #1565c0 !important;
+}
+
+.input-field .prefix.active{
+    color: #1565c0;
+}
+
+[type="checkbox"].filled-in:checked+label:after {
+    border: 2px solid #1565c0 !important;
+    background-color: #1565c0 !important;
+}
+
+[type="checkbox"]:checked+span:not(.lever):before {
+    border-right: 2px solid #1565c0;
+    border-bottom: 2px solid #1565c0;
+}
+
+[type="checkbox"].filled-in:checked+span:not(.lever):after {
+    border: 2px solid #1565c0;
+    background-color: #1565c0;
+}
+
+blockquote {
+    border-left: 5px solid #012039 !important;
+}
+
+.switch label input[type=checkbox]:checked+.lever:after {
+    background-color: #1565c0;
+}
+
+.collection a.collection-item{
+    color: #1565c0;
+}
+.switch label input[type=checkbox]:checked+.lever {
+    background-color: #85D1F4;
+}
+input[type=checkbox]:checked:not(:disabled) ~ .lever:active::before, input[type=checkbox]:checked:not(:disabled).tabbed:focus ~ .lever::before {
+    -webkit-transform: scale(2.4);
+    transform: scale(2.4);
+    background-color: rgba(133,209,244,0.15);
+}
+.secondary-content {
+    color: #1565c0;
+}
+.progress .indeterminate {
+    background-color: #1565c0;
+}
+.progress {
+    background-color: #B7E3F7;
+}
+
+.btn:focus, .btn-large:focus, .btn-small:focus, .btn-floating:focus {
+    background-color: #1565c0;
+}
+
+.tabs .tab a {
+    color: #012039 ;
+    opacity: 0.7;
+}
+
+.tabs .tab a:hover, .tabs .tab a.active {
+    color: #012039 ;
+    opacity: 1;
+}
+
+.tabs .indicator {
+    background-color: #012039;
+}
+
+.tabs .tab a:focus, .tabs .tab a:focus.active {
+    background-color: rgba(246,178,181,0);
+}
+
+.select-wrapper input.select-dropdown:focus {
+    border-bottom: 1px solid #1565c0;
+}
+
+.blocDoc
+{
+    background-color:white;
+    position:relative;
+}
+
+.handle
+{
+    cursor: move; 
+    cursor: grab;
+    cursor: -moz-grab;
+    cursor: -webkit-grab;
+    position:absolute;
+    top:10px;
+    left:-30px;
+    display: block;
+}
+.handle:active {
+    cursor: grabbing;
+    cursor: -moz-grabbing;
+    cursor: -webkit-grabbing;
+}
+
+.trumbowyg-box {
+    height: 300px
+}
+
+.trumbowyg-editor[contenteditable=true]:empty::before{
+    content: attr(placeholder);
+    color: #999;
+}
+
+.boutonEnregistrement{
+    width: 130px;
+    height: 60px;
+}
+
+.liTrumbo{
+    padding: 35px !important;
+}
+
+footer{
+    padding-top: 75px;
+}
+
+header, main, footer {
+  padding-left: 300px;
+}
+
+@media only screen and (max-width : 992px), {
+  header, main, footer {
+    padding-left: 0;
+    
+}
+.sidenav-trigger{
+    background-color: #102039!important;
+    -webkit-box-shadow: none !important;
+    padding-top: 32px !important;
+}
+#signature{
+    margin-left: 0% !important; 
+    width: none !important;
+
+}
+div[align="right"]{
+    text-align: left;
+}
+}
+

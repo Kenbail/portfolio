@@ -1,0 +1,100 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello BackofficeProjectController!{% endblock %}
+
+{% block body %}
+    <h1>Hello {{ controller_name }}! ✅✅✅✅</h1>
+
+    {% for question in questions %}
+            
+    {% dump(question) %}
+
+    <h3>{{ question.libelle }}</h3>
+
+    {% endfor %}
+
+
+<!-- <li class="titlelist"><b>Demande</b></li>
+
+<li>Date envoi : <input type="text"></li>
+<li>Direction ou service métier : <input type="text"></li>
+<li>Directeur ou chef de service : <input type="text"></li>
+    
+<li class="titlelist"><b>Réception</b></li>
+
+<li>Date réception : <input type="text"></li>
+<li>Sous-direction ou service DSIN : <input type="text"></li>
+<li>Directeur ou chef de service : <input type="text"></li> 
+            </ul>
+
+<h3>1. Donnez un nom au projet</h3>
+<br>
+
+<h3>2. Quel est votre besoin ?</h3>
+<br>
+
+<h3>3. Dans la liste ci-dessous, merci de sélectionner le/s grand/s domaine/s fonctionnel/s à couvrir par le service numérique?</h3>
+<br>
+
+<h3>4. Avez-Vous déjà identifié une solution qui réponde à votre besoin ?</h3>
+<br>
+
+<h3>5. Quels sont les objectifs et les gains attendus ?</h3>
+<br>
+
+<h3>6. Le service numérique auta-t-il un effet organisationnel en matière d'effectis du service ou de la direction</h3>
+<br>
+
+<h3>7. Le service numérique permettra-t-il de gagner du temps dans la réalisation d'une ou plusieurs tâches ?</h3>
+<br>
+
+<h3>8.Le service numérique aura-t-il un impact financier ?</h3>
+<br>
+
+<h3>9.Le service numérique devra-t-il intégrer du reporting ?</h3>
+<br>
+
+<h3>10.	Le service numérique devra-t-il être accessible depuis l’extérieur ?</h3>
+<br>
+
+<h3>11.	Le service numérique collectera-t-il des données à caractère personnel ?</h3>
+<br>
+
+<h3>12.	Le service numérique collectera-t-il d’autres types de données auxquelles sont associées des obligations juridiques à respecter ?</h3>
+<br>
+
+<h3>13.	Le service numérique collectera-t-il d’autres types de données auxquelles sont associées des obligations juridiques à respecter ?</h3>
+<br>
+
+<h3>14.	Avez-vous une idée de la volumétrie des données nécessaires à l’initialisation du service numérique ?</h3>
+<br>
+
+<h3>15.Avez-vous une idée de la volumétrie des données qui seront mises à jour régulièrement par le service numérique ?</h3>
+<br>
+
+<h3>16.	Avez-vous une idée de la fréquence de traitement et de mise à jour de ces données ?</h3>
+<br>
+
+<h3>17.	Quelle est la disponibilité du service attendue ?</h3>
+<br>
+
+<h3>18.	La mise en œuvre du service numérique nécessitera-t-elle l’utilisation et donc l’achat de matériels spécifiques (ex. tablette, portable, aides techniques, etc.) ?</h3>
+<br>
+
+<h3>19.	Avez-vous prévu un budget pour acheter ou faire évoluer le service numérique ? </h3>
+<br>
+
+<h3>20.	Avez-vous prévu de nommer un chef de projet et/ou un référent pour piloter et collaborer avec la DSIN sur la mise en place de ce nouveau service ?</h3>
+<br>
+
+<h3>21.	Quelle est la date envisagée de mise à disposition du service numérique aux usagers ?</h3>
+<br>
+
+<h3>22.	Cette date est-elle en lien avec une date butoir réglementaire ?</h3>
+
+
+</div> -->
+{% endblock %}
+
+{% block footer %}<div></div>{% endblock %}
+

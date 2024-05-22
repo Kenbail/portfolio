@@ -4,25 +4,25 @@
 <head>
     <link rel="stylesheet" href="style.css" />
     <title>Portfolio</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="config/jquery-3.7.1.min.js"></script>
 </head>
 
 <body>
 
-    <div></div>
-    <div class="loading-screen">
+    <!--<div class="loading-screen">
         <div class="spinner"></div>
         <div>
             Veuillez patienter le site est en construction
         </div>
-    </div>
+    </div>-->
     <header>
         <nav>
             <ul>
                 <li><a class="linav orange texte" href='#top'>Accueil</a></li>
-                <li><a class="linav orange texte" href="#">Présentation</a></li>
+                <li><a class="linav orange texte" href="#PrésentationAnchor">Présentation</a></li>
                 <li><a class="linav orange texte" href="#parcoursanchor">Parcours</a></li>
                 <li><a class="linav orange texte" href="#projetanchor">Projets</a></li>
+                <li><a class="linav orange texte" href="#projetanchor">Veille</a></li>
                 <li class="gauche"><img src="image/icons8-soleil-64.png" height="30px">
                 </li>
             </ul>
@@ -31,60 +31,145 @@
     <div class="part">
         <div class="container">
             <div id="square1" class="top">
-                <img id="pprofil" src="image/lulujoli.jpg">
+                <img id="pprofil" src="image/lucasprofil.png">
             </div>
-            <div id="square2" class="orangebackground">
-                Étudiant en BTS SIO Option Slam à Efrei Paris, j'aime essayer de me challenger
+            <div id="square2" class="couleur texte ">
+                Goué Lucas, étudiant en deuxième année en BTS SIO SLAM. Enthousiaste à l'idée de créer des solutions
+                innovantes, je combine ma créativité et mes compétences techniques pour concevoir des applications web
+                ou non et sites internet.<br><br>
+                En constante évolution, mon parcours d'apprentissage comprend la
+                maîtrise de langages tels que JavaScript, PHP, SQL, Java, HTML, CSS, ainsi que des frameworks comme
+                Symfony.
             </div>
-            <div id="square4" class="orangebackground">
-                Compétence
-                -HTML
-                -CSS
-                -JS (Jquery)
-                -JAVA
+            <div id="square4" class="couleur texte">
+                Compétence technique:<br><br>
+                -HTML<br>
+                -CSS<br>
+                -JavaScript (Jquery)<br>
+                -Java<br>
+                -Ajax<br>
+                -mySQL<br>
             </div>
-            <div id="square5" class="orangebackground">
-                Dans le futur
+            <div class="couleur texte" id="square18">
+                Languages de programation utilisés l'hors de projets:<br><br>
+                -CSS <br>
+                -JavaScript <br>
+                -JAVA <br>
+                -C <br>
+                -VBA <br>
+                -SQL
+            </div>
+            <div id="square5" class="couleur texte">
+                Dans le futur j'aimerais m'essayer à la cybersécurité et à la configuration de serveur et autres
+                installation d'outils .<br><br>
+                Apprendre le design fait aussi partie de mes objectifs
             </div>
         </div>
     </div>
-    <div id="parcoursanchor"></div>
+    <div id="PrésentationAnchor"></div>
     <div class="part">
+        <div class="toutpetitcontainer">
+            <div class="titre">
+                Le bts SIO?
+            </div>
+            <div class="titre">
+                Et l'option slam?
+            </div>
+        </div>
+        <div class="petitcontainer">
+
+            <div class="couleur texte" id="square19">
+                Le BTS SIO, ou "Services Informatiques aux Organisations", est une formation qui prépare les étudiants à
+                travailler dans le domaine de l'informatique au sein des entreprises. Cette formation dure deux
+                ans.<br><br>
+
+                Les étudiants apprennent les bases de l'informatique, comme la programmation, la gestion
+                des réseaux, la sécurité informatique et la gestion de projets. Ils acquièrent également des compétences
+                en communication, car ils seront amenés à travailler en équipe et à répondre aux
+                besoins informatiques des entreprises.
+            </div>
+            <div class="couleur texte" id="square20">
+                Dans l'option SLAM du BTS SIO, les étudiants se spécialisent dans le développement de logiciels pour les
+                entreprises. Ils apprennent la programmation, la gestion de projet, la conception de bases de données et
+                les technologies web.<br><br>
+
+                En résumé, c'est une formation axée sur la création et la gestion d'applications informatiques adaptées
+                aux besoins des organisations.
+            </div>
+        </div>
+        <div id="parcoursanchor"></div>
+        <div class="titre esp">
+            Mon Parcours
+        </div>
         <div class="container">
             <div class="line"></div>
-            <div id="square6">efrei</div>
-            <div id="square7">alternance Stage DSIN</div>
-            <div id="square8">EBG</div>
-            <div id="square9">Bac option math NSI</div>
-            <div class="rond" id="rond1"></div>
-            <div class="rond" id="rond2"></div>
-            <div class="rond" id="rond3"></div>
-            <div class="rond" id="rond4"></div>
+            <div class="couleur texte" id="square6">
+                <p class="grand">Bac option math NSI</p>
+                <p>2019-2022</p><br>
+                <p>Première introduction à la programation et la programation orientée objet, avec des exercices en
+                    python, html et SQL. </p> <br>
+                <p class="petit">Lycée Etienne Bezout</p>
+            </div>
+            <div class="couleur texte" id="square7">
+                <p class="grand">BTS SIO option Slam</p>
+                <p>2022-2024</p><br>
+                <p>Apprentissage du PHP et java, développement d'une logique de programmation, gestion de base de
+                    données et consolidation de mes acquis.</p> <br>
+                <p class="petit">Efrei</p>
+            </div>
+            <div class="couleur texte" id="square8">
+                <p class="grand">Stage de première année</p>
+                <p>du 5 mai au 6 juin 2023</p><br>
+                <p>Première expérience en entreprise, découverte de l'ajax et du javascript, premier grand projet et
+                    utilisation de différent plugin.</p>
+                <br>
+                <p class="petit">EBG</p>
+            </div>
+            <div class="couleur texte" id="square9">
+                <p class="grand">alternance Stage</p>
+                <p>du 1er mars au 1er juin 2024</p><br>
+                <p>Seconde expérience en entreprise, première expérience client, création de macro VBA et apprentissage
+                    du framework Symfony</p><br>
+                <p class="petit">Département de seine et marne</p>
+            </div>
+            <div class="rond couleur texte" id="rond1"></div>
+            <div class="rond couleur texte" id="rond2"></div>
+            <div class="rond couleur texte" id="rond3"></div>
+            <div class="rond couleur texte" id="rond4"></div>
         </div>
     </div>
+
     <div id="projetanchor"></div>
     <div id="part3" class="part">
-        <div class="container" id="square10">Mes Projets:
-            <div id="square11">
-                Ebg : Outils de documentation (Intranet)
+        <div class="titre">Mes Projets:</div>
+        <div class="espace"></div>
+        <div class="container" id="square10">
+            <div class="couleur texte" id="square11">
+                <p class="grand">Stage EBG:</p><br>
+                Outils de documentation (Intranet)
+                <div class="boutton"><a target="_blank" href="indexEBG.html">Voir Plus</a></div>
             </div>
-            <div id="square12">
-                Projet Perso: Site non-commerciale Nature&Hotes
+            <div class="couleur texte" id="square12">
+                <p class="grand">Projet Perso: </p><br>
+                Site non-commerciale Nature&Hotes
+                <div class="boutton"><a target="_blank" href="Projet/Laetitia/index.html">Voir Plus</a></div>
             </div>
-            <div id="square13">
-                Introduction à jquery Memory
+            <div class="couleur texte" id="square13">
+                <p class="grand">Projet Perso:</p> <br>Memory
+                <div class="boutton"><a target="_blank" href="Projet/Memory/Index.html">Voir Plus</a></div>
             </div>
-            <div id="square14">
-                alternance: Outils de gestionnaire de projet (Intranet)
-            </div>
-            <div id="square15">
-                alternance: Macro VBA
+            <div class="couleur texte" id="square14">
+                <p class="grand">alternance:</p> <br>Outils de gestionnaire de projet (Intranet)
+                <div class="boutton"><a target="_blank" href="indexDep.html">Voir Plus</a></div>
             </div>
         </div>
     </div>
     <div class="part">
-        <div class="container" id="square16">
-            Vielle informatique
+        <div class="couleur texte" class="container">
+            Veille
+            <div class="couleur texte" id="square17">
+                tgest
+            </div>
         </div>
     </div>
     <div class="part">
@@ -95,9 +180,10 @@
     </div>
 
 
-
+    <button> <a href="Projet/EBG/documentation/index.php">AAAAAAA</a></button>
 
 </body>
 <script src="script.js"></script>
+<script src="Projet/Trumbowyg-main/Trumbowyg-main/dist/trumbowyg.min.js"></script>
 
 </html>

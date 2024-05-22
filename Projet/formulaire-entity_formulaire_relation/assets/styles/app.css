@@ -1,0 +1,239 @@
+.accueil{
+    border-radius: 15px 15px 15px 15px;  
+    /* margin-left: 18%; */
+}
+
+body{
+
+    padding: 5em 10em 5em;
+    margin-left:auto;
+    margin-right:auto;
+    background-color:#efefef ;
+    max-width: 1200px;
+}
+
+.btn{
+    flex: 1;
+    margin-right: 4em;
+    margin-left: 4em;
+    font-size: 18px;
+    color: #ffffff;
+    background-color: #00498f;
+    padding: 10px 20px;
+    border: solid #00498f 2px;
+    transition : 150ms;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    border-radius: 15px 15px 15px 15px; 
+    box-shadow: 3px 4px 5px 0px rgba(0, 0, 0, 0.38);
+}
+
+
+
+
+.btn:hover{
+    background-color: #a1cbf1;
+    color: #00498f;
+}
+
+
+form{
+    margin-bottom: 80px;
+}
+
+h1{ 
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    color: #004899;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: stretch;
+    text-align: center;
+    margin-bottom: 70px;
+    font-size: 3em;
+}
+
+h3{
+    margin-top: 2em;
+    font-size: 1.5em;
+}
+
+header{
+    background-color:#004899;
+    margin: 0%;
+    height: 130px;
+    border-radius: 3em 3em 0em 0em;
+    box-shadow: 0px 3px 3px 0px #004899;
+    /* margin-bottom: 4px; */
+}
+
+img{
+    height: 50px;
+    width: auto;  
+    margin-top: 2.5em; 
+    margin-left: 3em;
+}
+
+input{
+    border: 1px solid #c7d8e2;
+    border-radius: 5px;
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+    display: inline;
+}
+
+li input {
+    display: inline;
+}
+
+.page{
+    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.38);
+    border-radius: 3em 3em 3em 3em;
+    
+}
+
+.folioPage{
+    display: flex;
+    text-align: center;
+    height: 10em;
+    align-items: center;
+    justify-content: center;
+    align-content: baseline;
+}
+
+.folio{
+    border: 1px solid #004899;
+    height: 1.2em;
+    width: 2em;
+    border-radius:5em;
+    /* margin: .3em; */
+    margin: .2em;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    color: #004899;
+    font-size: 1.5em;
+    text-decoration: none;
+    box-shadow: 3px 4px 5px 0px rgba(0, 0, 0, 0.38);
+    /* background-color: #c7d8e2; */
+    background-color: #a1cbf1;
+}
+
+.folio:hover{
+    margin:none;
+    /* height: 2em;
+    width: 3em; */
+    color:white;
+    background-color: #00498f;
+    transition: 75ms;
+    transform: scale(1.3);
+    box-shadow: 3px 4px 5px 0px rgba(0, 0, 0, 0.38);
+};
+
+
+title {
+    color: #004899;
+}
+
+td input {
+    background-color: #efefef;
+    border: none;
+}
+
+ul {
+    display: flex;
+    flex-direction: column; /* Alignement vertical */
+    list-style: none; /* Supprimer les puces de la liste */
+    padding: 0; /* Supprimer le padding par défaut de la liste */
+  }
+
+.container{
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    color: #004899;
+    padding: 5%;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+    text-align: left 5px;
+    background-color:#d4eaff ;
+    /* background-image: url(/formulaire/assets/img/sky-aquarelle-bleue_23-2147504089.jpg); */
+    border-radius: 0em 0em 3em 3em;
+    
+    
+}
+
+.inputtext{
+    width: 100%;
+}
+  
+
+.titlelist{
+    margin-top: 1.5em;
+    margin-bottom: 1em;
+}
+
+
+#description{
+    font-size: 1.5em;
+    text-align: center;
+}
+
+#duree{
+    text-align: center;
+}
+
+label{
+    margin-left: 1em;
+}
+
+.pagination{
+    float: right;
+    font-size: 1.5em;
+    margin-right: 3em;
+}
+
+#remarque{
+    font-size: 1.5em;
+    text-align: center;
+
+}
+
+
+th{
+    background-color: #004899;
+    color: white;
+    width: 50%;
+    height: 20px;
+
+}
+
+tr{
+    height: 20px;
+}
+  
+tbody{
+    background-color: #efefef;
+    color: #004899;
+    border: 1px solid #004899;
+    border-radius: 5px;
+    empty-cells : show;
+}
+  
+.buttons-container{
+    display: flex;
+}
+span[more]{
+    cursor: pointer;
+}
+.remplir{
+    color: red;
+}
+
+.question{
+    display: flex;
+    flex-direction: column;
+}
+.reponse {
+    flex: 50%;
+  }

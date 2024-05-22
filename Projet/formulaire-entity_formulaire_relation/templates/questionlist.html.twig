@@ -1,0 +1,33 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello FormController!{% endblock %}
+
+{% block body %}
+
+
+<div class="affichage">
+    {% for question in questions %}
+    <h3>{{ question.libelle }}</h3>
+        <div class="question">
+            {% for reponse in reponses %}
+                {% if reponse.getIdQuestion() == question.id %}
+                <div class="reponse">
+                    <{{reponse.balises}} id="{{reponse.id}}" type="{{reponse.type_input}}" label="{{reponse.getlabel}}" name="question{{reponse.getIdQuestion}}" class="question{{reponse.getIdQuestion}}" {{reponse.attribut_question}}>{{ reponse.reponse }}</{{reponse.balises}}><p hidden></p>
+                </div>
+                {% endif %}
+            {% endfor %}
+        </div>      
+    {% endfor %}
+</div>
+
+{{ form_start(form) }}
+{{ form_row(form.reponse_user, { 'attr': {'class': 'question1'} }) }}
+
+<button type="submit" class="test">Enregistrer</button>
+{{ form_end(form) }}
+
+{% block footer %}{% endblock %}
+
+
+
+{% endblock %}

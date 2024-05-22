@@ -1,0 +1,34 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello BackofficeProjectController!{% endblock %}
+  
+{% block body %}
+
+    <h1>Hello {{ controller_name }}! ✅✅✅✅</h1>
+
+
+
+<h3>Liste des projets</h3>
+<br>
+<div>
+{{dump()}}
+    
+    
+</div>
+
+<h3>liste des utilisateurs</h3>
+{% for user in users %}
+
+{{user.firstname}} {{user.lastname}}
+<br>
+{% endfor %}
+
+
+<h3>Projets par date</h3>
+<br>
+
+
+</div>
+{% endblock %}
+
+{% block footer %}<div></div>{% endblock %}

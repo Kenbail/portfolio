@@ -1,0 +1,40 @@
+controllers:
+    resource:
+        path: ../src/Controller/
+        namespace: App\Controller
+    type: attribute
+
+# app_questionnaire:
+#     path: /questionnaire
+#     controller: App\Controller\QuestionnaireController
+#     methods: [GET, POST]
+
+# app_page_1:
+#     path: /questionnaire/page_1
+#     controller: App\Controller\QuestionnaireController
+#     methods: [GET, POST]
+
+# app_page_2:
+#     path: /questionnaire/page_2
+#     controller: App\Controller\QuestionnaireController
+#     methods: [GET, POST]
+
+# app_page_3:
+#     path: /questionnaire/page_3
+#     controller: App\Controller\QuestionnaireController
+#     methods: [GET, POST]
+
+# app_page_4:
+#     path: /questionnaire/page_4
+#     controller: App\Controller\QuestionnaireController
+#     methods: [GET, POST]
+
+# app_page_5:
+#     path: /questionnaire/page_5
+#     controller: App\Controller\QuestionnaireController
+#     methods: [GET, POST]
+
+# app_page_6:
+#     path: /questionnaire/page_6
+#     controller: App\Controller\QuestionnaireController
+#     methods: [GET, POST]

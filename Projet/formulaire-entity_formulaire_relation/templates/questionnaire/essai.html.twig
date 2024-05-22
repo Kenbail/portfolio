@@ -1,0 +1,79 @@
+{% extends 'base.html.twig' %}
+            
+    
+
+
+{% block body %}
+
+
+    {{ form_start(form) }}
+
+    
+
+    <div class="affichage">
+        {% for question in questions %}
+        <h3>{{ question.libelle }}</h3>
+            <div class="question">
+                {% for reponse in reponses %}
+                    {% if reponse.getIdQuestion() == question.id %}
+                    <div class="reponse">
+
+{{ form_row(form.
+
+                        <{{reponse.balises}} id="{{reponse.id}}" type="{{reponse.type_input}}" label="{{reponse.getlabel}}" name="question{{reponse.getIdQuestion}}" class="question{{reponse.getIdQuestion}}" {{reponse.attribut_question}}>{{ reponse.reponse }}</{{reponse.balises}}><p hidden></p>
+
+reponse_user) }}
+
+                    </div>
+                    {% endif %}
+                {% endfor %}
+            </div>      
+        {% endfor %}
+    </div>
+
+        
+
+    {{ form_end(form) }}
+
+        <button type="submit" class="test">Enregistrer</button>
+        {{ dump(reponses) }}
+        {{ dump(questions) }}
+       
+
+        
+    
+
+{% endblock %}
+
+{% block footer %}{% endblock %}
+
+
+
+
+
+
+
+
+
+/////////// code qui fonctionne vvvvvvvv questionlist.html.twig
+
+
+
+    
+{% extends 'base.html.twig' %}
+            
+    
+
+
+{% block body %}
+    <h3>1. Donnez un nom au projet</h3>
+
+    {{ form_start(form) }}
+        {{ form_row(form.reponse_user, { 'attr': {'class': 'question1'} }) }}
+        
+        <button type="submit" class="test">Enregistrer</button>
+    {{ form_end(form) }}
+
+{% endblock %}
+
+{% block footer %}{% endblock %}

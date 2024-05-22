@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}Questionnaire d’expression du besoin(1).ico{% endblock %}</title>
+        <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('img/logo77 (1).ico') }}">
+        {% block stylesheets %}
+        <link rel="stylesheet" href="{{ asset('img/logo77 (1).ico') }}">
+        {% endblock %}
+        {% block javascripts %}
+        <!-- <script src="{{ asset('/jquery-3.7.1.min.js') }}"></script>
+        <script src="{{ asset('/storage.js') }}"></script> -->
+        {% block importmap %}{{ importmap('app') }}{% endblock %}
+        {% endblock %}
+
+    </head>
+    <body>
+    <div class="page">
+    
+        <header>
+            {% block header %}
+            <img src="{{ asset('img/logo-d77-header.png') }}" alt="ACME logo">
+            {% endblock %}
+        </header>
+        
+    <div class="container">
+
+        <form method="post">
+            {% block body %}{% endblock %}
+        </form> 
+        
+        {% block footer %}
+
+        <p class="remplir" hidden> Merci de répondre à toute les questions</p>
+            
+            <nav class="buttons-container">
+
+                {% if pageact < pages %}
+                   <a href="form?page={{pageact+1}}" class="btn btn-primary next test"  >Sauvegarder et continuer</a>
+                {% endif %}
+
+                {% if pageact == pages %}
+                    <a href="questionlist" class="btn accueil test" >Enregistrer</a>
+                {% endif %}
+
+                <a href="questionnaire" class="btn accueil test">Retour à l'accueil</a>
+        
+            </nav>  
+
+            <nav class="folioPage">
+                {% if pageact > 1 %}
+                    <a href="form?page={{pageact-1}}" class="folio test" >&lt;&lt;</a>
+                {% endif %}
+
+                {% for i in 1..6 %}
+                    {% if pageact == i %}
+                        <a class="folio test" style="background-color:#004899; color: white;" id="fatPagination" href="form?page={{i}}"> {{i}}</a>
+                    {% else %}
+                        <a class="folio test" href="form?page={{i}}"> {{i}}</a>
+                    {% endif %}  
+                {% endfor %}
+
+                {% if pageact < pages %}
+                    <a href="form?page={{pageact+1}}" class="folio test" >&gt;&gt;</a>
+                {% endif %}
+            </nav>
+
+        {% endblock %}
+    </div> 
+
+    </div> 
+
+        <script src="{{ asset('/storage.js') }}"></script>
+        <script src="{{ asset('/affichage.js') }}"></script>
+        <script src="{{ asset('/jquery-3.7.1.min.js') }}"></script>  
+        <!-- <script src="{{ asset('js/es-module-shims.js') }}"></script> -->
+
+    
+    </body>
+</html>
+
