@@ -1,6 +1,13 @@
 $(document).ready(function () {
 
     $('#trumbo').trumbowyg()
+    $('#gitebg').on("click", function () {
+        window.location.href = 'https://github.com/Kenbail/portfolio/tree/main/Projet/EBG/documentation';
+    })
+
+    $('#gitdep').on("click", function () {
+        window.location.href = 'https://github.com/Kenbail/portfolio/tree/main/Projet/formulaire-entity_formulaire_relation';
+    })
 
     setTimeout(() => {
         $(".loading-screen").hide()

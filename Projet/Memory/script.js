@@ -22,7 +22,7 @@ $(document).ready(function () {
 /* boutton difficulter choisis, création grille de jeu */
 $(".lancer_party").on("click", function () {
     $("#tableau").hide()
-    Images = ["images/humain/alexou.jpg", "images/humain/gaia.jpg", "images/humain/Jesse_Pinkman2.png", "images/humain/lucas.jpg", "images/humain/QCOCO.jpeg", "images/humain/zneo.jpg", "images/humain/max-taylor-lifts-2.jpg", "images/humain/robin.jpg"]
+    Images = []
 
     memo_diff = $(this)
     col_lign = $(this).text().split('X')

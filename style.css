@@ -65,7 +65,13 @@ header nav ul {
 }
 
 .icones {
-    align-content: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    align-items: center;
+    align-content: stretch;
+
 }
 
 .gauche {
@@ -110,6 +116,15 @@ header nav a {
     align-content: stretch;
 }
 
+.partmodif {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: stretch;
+}
+
 .partrow {
     margin-top: 150px;
     display: flex;
@@ -128,6 +143,13 @@ header nav a {
     position: relative;
 }
 
+.grandcontainer {
+    margin-bottom: 100px;
+    width: 1400px;
+    height: 1800px;
+    position: relative;
+}
+
 .petitcontainer {
     margin-bottom: 400px;
     width: 1400px;
@@ -138,6 +160,10 @@ header nav a {
     justify-content: space-around;
     align-items: center;
     align-content: stretch;
+}
+
+.git {
+    cursor: pointer;
 }
 
 .toutpetitcontainer {
@@ -204,6 +230,18 @@ header nav a {
     padding-right: solid 5px !important;
 }
 
+.texteb {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    letter-spacing: 2px;
+    word-spacing: -2px;
+    font-weight: 400;
+    color: white !important;
+    padding-left: solid 5px !important;
+    padding-right: solid 5px !important;
+}
+
+
 
 #square19 {
     width: 600px;
@@ -256,17 +294,23 @@ header nav a {
     border: 1px solid black;
     border-radius: solid 5px;
     padding: 10px;
-    box-shadow: 0px 6px 0px rgb(76, 130, 229);
+    box-shadow: 0px 6px 0px black;
     transition: all .1s;
     position: absolute;
     bottom: 20px;
     left: 22.5%;
     color: black;
+    border-radius: 2px;
+}
+
+.imgv {
+    height: 300px;
+    width: 300px;
 }
 
 .boutton:hover {
     background: linear-gradient(to bottom, #93DEFF 5%, rgb(76, 130, 229) 100%);
-    background-color: #476e9e;
+    background-color: #95bae7;
 }
 
 .boutton:active {
@@ -560,14 +604,12 @@ header nav a {
 }
 
 #square25 {
-    width: 450px;
-    height: 200px;
-    background-color: #93DEFF;
+    background-color: white;
     border: 3px solid #F7F7F7;
     border-radius: solid 5px;
     position: absolute;
-    left: 00px;
-    top: 100px;
+    left: 300px;
+    top: 50px;
 }
 
 #square26 {
@@ -578,7 +620,7 @@ header nav a {
     border-radius: solid 5px;
     position: absolute;
     left: 800px;
-    top: 350px;
+    top: 150px;
 }
 
 #square27 {
@@ -600,5 +642,82 @@ header nav a {
     border-radius: solid 5px;
     position: absolute;
     left: 750px;
-    top: 850px;
+    top: 500px;
+}
+
+#square29 {
+    width: 600px;
+    height: 100px;
+    border-radius: solid 5px;
+}
+
+#square30 {
+    width: 600px;
+    height: 150px;
+    background-color: #93DEFF;
+    border: 3px solid #F7F7F7;
+    position: absolute;
+    left: 050px;
+    top: 100px;
+}
+
+#square31 {
+    background-color: #93DEFF;
+    border: 3px solid #F7F7F7;
+    padding: 10px;
+    border-radius: 10px;
+
+}
+
+.card {
+    background-color: #333;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    width: 300px;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card-content h2 {
+    font-size: 1.5em;
+    margin: 0 0 10px;
+}
+
+.card-content p {
+    font-size: 0.9em;
+    line-height: 1.6;
+    margin: 0 0 20px;
+}
+
+.card-content a {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #4CAF50;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.card-content a:hover {
+    background-color: #45a049;
+}
+
+.veilcont {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: stretch;
 }
